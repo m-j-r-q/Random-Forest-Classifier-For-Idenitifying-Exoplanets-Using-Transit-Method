@@ -25,6 +25,7 @@ st.divider()
 
 st.subheader("Enter Variable Values:")
 st.write("Enter the values for the following variables to compute the prediction. Please recheck that the values were entered correctly after you press enter:")
+st.markdown("The explanation for each variable is given [here](https://exoplanetarchive.ipac.caltech.edu/docs/API_kepcandidate_columns.html)")
 
 inputs = []
 
@@ -43,4 +44,5 @@ if st.button("Predict"):
     elif prediction == 0:
         st.write("This Treshold Crossing Event (TCE) is a False Positive:")
         st.write(f"The probability of the TCE being a Candidate is: {probability} ")
+
     
